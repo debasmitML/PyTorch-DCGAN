@@ -12,7 +12,7 @@ from torchvision.utils import make_grid , save_image
 def arguments():
     parser = argparse.ArgumentParser(description = "Define dynamic parameters for the model.")
     parser.add_argument('--epochs' , default = 20 , type = int , help = 'number of epochs')
-    parser.add_argument('--data_dir' , default = 'data/img_align_celeba/img_align_celeba' , type = str , help = 'data directory path')
+    parser.add_argument('--data_dir' , default = './data' , type = str , help = 'data directory path')
     parser.add_argument('--batch_size' , default = 64 , type = int , help = 'define batch size')
     parser.add_argument("--latent_dims", default=100, type = int , help="cuda device, i.e. 0 or cpu")
     parser.add_argument("--learning_rate", default=0.0002, type = float , help="learning rate")
